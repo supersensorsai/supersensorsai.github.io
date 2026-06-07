@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Font Test — Super Sensors</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700&family=Outfit:wght@400;600;700&family=Manrope:wght@400;600;700;800&family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-bg:      #0A0A0F;
+      --color-surface: #111118;
+      --color-border:  #1E1E2E;
+      --color-accent:  #00E5A0;
+      --color-text:    #F0F0F5;
+      --color-muted:   #7A7A9A;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--color-bg);
+      color: var(--color-text);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 400;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      padding: 3rem 1.5rem;
+    }
+
+    .page-title {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .page-subtitle {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem;
+      color: var(--color-muted);
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .current-label {
+      display: inline-block;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-muted);
+      background: var(--color-border);
+      padding: 0.2rem 0.5rem;
+      border-radius: 3px;
+      margin-left: 0.6rem;
+      vertical-align: middle;
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      padding: 2.5rem 2.5rem 2rem;
+    }
+
+    .card-meta {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+      margin-bottom: 1.25rem;
+    }
+
+    .card-meta span {
+      color: var(--color-muted);
+      font-weight: 400;
+    }
+
+    .display-heading {
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--color-text);
+      margin-bottom: 0.75rem;
+    }
+
+    .sub-heading {
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--color-text);
+      margin-bottom: 0.5rem;
+    }
+
+    .small-heading {
+      font-size: clamp(1.1rem, 2vw, 1.4rem);
+      font-weight: 600;
+      line-height: 1.2;
+      color: var(--color-text);
+      margin-bottom: 1rem;
+    }
+
+    .body-sample {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1rem;
+      color: var(--color-muted);
+      line-height: 1.75;
+      max-width: 600px;
+    }
+
+    /* Font-specific overrides */
+    .font-space-grotesk  { font-family: 'Space Grotesk', sans-serif; }
+    .font-plus-jakarta   { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .font-outfit         { font-family: 'Outfit', sans-serif; }
+    .font-manrope        { font-family: 'Manrope', sans-serif; }
+    .font-dm-serif       { font-family: 'DM Serif Display', serif; font-weight: 400; }
+    .font-dm-serif.display-heading { font-size: clamp(2rem, 4vw, 3.4rem); }
+    .font-dm-serif.sub-heading     { font-weight: 400; }
+    .font-dm-serif.small-heading   { font-weight: 400; }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--color-border);
+      margin: 1.25rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <p class="page-title">Font Comparison — Super Sensors</p>
+  <p class="page-subtitle">Heading font candidates for "The Infrastructure for Breath-Based Discovery" &nbsp;·&nbsp; Body font stays DM Sans</p>
+
+  <div class="cards">
+
+    <!-- 1. Space Grotesk -->
+    <div class="card">
+      <div class="card-meta">Option 1 &nbsp;·&nbsp; Space Grotesk &nbsp;<span>geometric, tech-forward, high legibility</span></div>
+      <h1 class="display-heading font-space-grotesk">The Infrastructure for<br>Breath-Based Discovery</h1>
+      <h2 class="sub-heading font-space-grotesk">Portable Multi-Analyte VOC Sensing</h2>
+      <h3 class="small-heading font-space-grotesk">Clinical-Grade Precision at Scale</h3>
+      <hr class="divider">
+      <p class="body-sample">A portable, multi-analyte VOC sensor platform that captures real-world breath data — at home, at scale, with clinical-grade precision.</p>
+    </div>
+
+    <!-- 2. Plus Jakarta Sans -->
+    <div class="card">
+      <div class="card-meta">Option 2 &nbsp;·&nbsp; Plus Jakarta Sans &nbsp;<span>clean, professional, versatile</span></div>
+      <h1 class="display-heading font-plus-jakarta">The Infrastructure for<br>Breath-Based Discovery</h1>
+      <h2 class="sub-heading font-plus-jakarta">Portable Multi-Analyte VOC Sensing</h2>
+      <h3 class="small-heading font-plus-jakarta">Clinical-Grade Precision at Scale</h3>
+      <hr class="divider">
+      <p class="body-sample">A portable, multi-analyte VOC sensor platform that captures real-world breath data — at home, at scale, with clinical-grade precision.</p>
+    </div>
+
+    <!-- 3. Outfit -->
+    <div class="card">
+      <div class="card-meta">Option 3 &nbsp;·&nbsp; Outfit &nbsp;<span>minimal, neutral, very legible</span></div>
+      <h1 class="display-heading font-outfit">The Infrastructure for<br>Breath-Based Discovery</h1>
+      <h2 class="sub-heading font-outfit">Portable Multi-Analyte VOC Sensing</h2>
+      <h3 class="small-heading font-outfit">Clinical-Grade Precision at Scale</h3>
+      <hr class="divider">
+      <p class="body-sample">A portable, multi-analyte VOC sensor platform that captures real-world breath data — at home, at scale, with clinical-grade precision.</p>
+    </div>
+
+    <!-- 4. Manrope -->
+    <div class="card">
+      <div class="card-meta">Option 4 &nbsp;·&nbsp; Manrope &nbsp;<span>refined, optical clarity, premium feel</span></div>
+      <h1 class="display-heading font-manrope">The Infrastructure for<br>Breath-Based Discovery</h1>
+      <h2 class="sub-heading font-manrope">Portable Multi-Analyte VOC Sensing</h2>
+      <h3 class="small-heading font-manrope">Clinical-Grade Precision at Scale</h3>
+      <hr class="divider">
+      <p class="body-sample">A portable, multi-analyte VOC sensor platform that captures real-world breath data — at home, at scale, with clinical-grade precision.</p>
+    </div>
+
+    <!-- 5. DM Serif Display -->
+    <div class="card">
+      <div class="card-meta">Option 5 &nbsp;·&nbsp; DM Serif Display &nbsp;<span>authoritative, scientific contrast, serif</span></div>
+      <h1 class="display-heading font-dm-serif">The Infrastructure for<br>Breath-Based Discovery</h1>
+      <h2 class="sub-heading font-dm-serif">Portable Multi-Analyte VOC Sensing</h2>
+      <h3 class="small-heading font-dm-serif">Clinical-Grade Precision at Scale</h3>
+      <hr class="divider">
+      <p class="body-sample">A portable, multi-analyte VOC sensor platform that captures real-world breath data — at home, at scale, with clinical-grade precision.</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
