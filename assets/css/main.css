@@ -51,7 +51,7 @@ ul {
 
 /* 2. Typography */
 h1, h2, h3, h4 {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   line-height: 1.2;
   color: var(--color-text);
   -webkit-font-smoothing: antialiased;
@@ -234,7 +234,7 @@ nav {
 }
 
 .mobile-nav a {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--color-text);
@@ -418,7 +418,7 @@ footer {
   display: inline-block;
   background: var(--color-accent);
   color: #0A0A0F;
-  font-family: 'Syne', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
   font-size: 0.95rem;
   padding: 0.75rem 1.75rem;
@@ -439,7 +439,7 @@ footer {
   background: transparent;
   border: 1px solid var(--color-border);
   color: var(--color-text);
-  font-family: 'Syne', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 600;
   font-size: 0.95rem;
   padding: 0.75rem 1.75rem;
@@ -460,7 +460,7 @@ footer {
   background: transparent;
   border: 1px solid var(--color-accent);
   color: var(--color-accent);
-  font-family: 'Syne', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 600;
   font-size: 0.95rem;
   padding: 0.75rem 1.75rem;
@@ -548,7 +548,7 @@ footer {
 }
 
 .pricing-card .price {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
   color: var(--color-accent);
@@ -608,7 +608,7 @@ footer {
 }
 
 .stat-card .stat-num {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 2rem;
   font-weight: 800;
   color: var(--color-accent);
@@ -755,7 +755,7 @@ footer {
   background: var(--color-surface);
   border: 1px solid var(--color-accent);
   color: var(--color-accent);
-  font-family: 'Syne', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
   font-size: 0.85rem;
   display: flex;
@@ -892,7 +892,7 @@ footer {
 }
 
 .compare-divider .vs {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 800;
   color: var(--color-muted);
   font-size: 0.8rem;
