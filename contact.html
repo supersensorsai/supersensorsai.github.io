@@ -1,0 +1,254 @@
+<!--
+  FORMSPREE SETUP (one-time, before going live):
+  1. Go to https://formspree.io and create a free account with info@supersensors.ai
+  2. Create a new form — copy the form endpoint URL (format: https://formspree.io/f/XXXXXXXX)
+  3. Replace the two placeholder action URLs in this file:
+     - Main contact form: action="https://formspree.io/f/REPLACE_MAIN_FORM_ID"
+     - Demo request form: action="https://formspree.io/f/REPLACE_DEMO_FORM_ID"
+  4. Verify your email in Formspree dashboard
+  5. Test with a submission — you should receive confirmation at info@supersensors.ai
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with Super Sensors. Request a demo, ask about study configurations, or connect with our team.">
+  <meta property="og:title" content="Contact | Super Sensors">
+  <meta property="og:description" content="Get in touch with Super Sensors. Request a demo, ask about study configurations, or connect with our team.">
+  <meta property="og:image" content="https://supersensors.ai/assets/img/og-image.svg">
+  <meta property="og:url" content="https://supersensors.ai/contact.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://supersensors.ai/contact.html">
+  <title>Contact | Super Sensors</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="./index.html">
+      <img src="./assets/img/logo.svg" alt="Super Sensors">
+    </a>
+    <ul class="nav-links">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./product.html">Product</a></li>
+      <li><a href="./applications.html">Applications</a></li>
+      <li><a href="./researchers.html">Researchers</a></li>
+      <li><a href="./investors.html">Investors</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./blog.html">Blog</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="./contact.html#demo" class="btn-primary">Request a Demo</a>
+    </div>
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-nav">
+  <a href="./index.html">Home</a>
+  <a href="./product.html">Product</a>
+  <a href="./applications.html">Applications</a>
+  <a href="./researchers.html">Researchers</a>
+  <a href="./investors.html">Investors</a>
+  <a href="./about.html">About</a>
+  <a href="./blog.html">Blog</a>
+  <a href="./contact.html#demo" class="btn-primary">Request a Demo</a>
+</div>
+
+<!-- Hero -->
+<section class="page-hero dot-grid-bg radial-glow">
+  <div class="container">
+    <span class="hero-label">Contact</span>
+    <h1>Get in Touch</h1>
+    <p class="text-muted mt-2" style="max-width:560px;font-size:1.1rem;">Whether you are planning a study, exploring the platform, or just have questions — we want to hear from you.</p>
+    <span class="hero-accent-line"></span>
+  </div>
+</section>
+
+<!-- Main Contact Section -->
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+      <!-- Left column: contact info -->
+      <div class="animate-on-scroll">
+        <h2>Contact Info</h2>
+        <div class="mt-4" style="display:flex;flex-direction:column;gap:2rem;">
+          <div>
+            <h4 style="color:var(--color-muted);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.5rem;">Email</h4>
+            <a href="mailto:info@supersensors.ai" style="color:var(--color-accent);font-size:1rem;word-break:break-all;">info@supersensors.ai</a>
+          </div>
+          <div>
+            <h4 style="color:var(--color-muted);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.5rem;">Response Time</h4>
+            <p class="text-muted">We typically respond within 1–2 business days.</p>
+          </div>
+          <div>
+            <p class="text-muted" style="line-height:1.75;">We welcome inquiries from researchers designing studies, companies exploring platform integrations, and investors interested in the breath diagnostics space. Whatever your question, reach out — we'll find the right answer together.</p>
+          </div>
+          <div>
+            <h4 style="color:var(--color-muted);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem;">Connect</h4>
+            <div class="social-icons">
+              <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
+              <a href="#" class="social-icon" aria-label="Twitter/X">𝕏</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right column: contact form -->
+      <div class="animate-on-scroll animate-delay-2">
+        <div class="contact-form-card">
+          <h3 style="margin-bottom:1.5rem;">Send a Message</h3>
+          <form action="https://formspree.io/f/xbdegorz" method="POST" data-formspree>
+            <div class="form-group">
+              <label for="name">Name <span style="color:var(--color-danger);">*</span></label>
+              <input type="text" id="name" name="name" required placeholder="Your full name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email <span style="color:var(--color-danger);">*</span></label>
+              <input type="email" id="email" name="email" required placeholder="youremail">
+            </div>
+            <div class="form-group">
+              <label for="organization">Organization</label>
+              <input type="text" id="organization" name="organization" placeholder="University, company, or institution">
+            </div>
+            <div class="form-group">
+              <label for="role">Role</label>
+              <select id="role" name="role">
+                <option value="">Select your role</option>
+                <option value="Researcher">Researcher</option>
+                <option value="Clinician">Clinician</option>
+                <option value="Industry">Industry</option>
+                <option value="Investor">Investor</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject <span style="color:var(--color-danger);">*</span></label>
+              <input type="text" id="subject" name="subject" required placeholder="What's this about?">
+            </div>
+            <div class="form-group">
+              <label for="message">Message <span style="color:var(--color-danger);">*</span></label>
+              <textarea id="message" name="message" required rows="5" placeholder="Tell us about your project, question, or interest…"></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="width:100%;">Send Message</button>
+            <div class="form-message success">Thank you — we will be in touch within 1–2 business days.</div>
+            <div class="form-message error">Something went wrong. Please email us directly at <a href="mailto:info@supersensors.ai" style="color:var(--color-danger);">info@supersensors.ai</a></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Demo Request Section -->
+<section id="demo" class="section" style="background:var(--color-surface);border-top:1px solid var(--color-border);border-bottom:1px solid var(--color-border);">
+  <div class="container">
+    <div class="grid-2" style="gap:4rem;align-items:start;">
+      <div class="animate-on-scroll">
+        <span class="hero-label">Demo</span>
+        <h2>Request a Demo</h2>
+        <span class="hero-accent-line"></span>
+        <p class="text-muted mt-3" style="line-height:1.75;">See the platform in action. We offer live virtual demos tailored to your research area or application — from a walkthrough of the hardware to a deep dive on the data pipeline and researcher dashboard.</p>
+        <div class="card mt-4">
+          <h4 style="margin-bottom:0.75rem;">What to expect</h4>
+          <ul class="feature-list">
+            <li>30-minute live session, tailored to your use case</li>
+            <li>Hardware overview and sensor configuration walkthrough</li>
+            <li>Live demo of the researcher dashboard and data export</li>
+            <li>Q&amp;A on study design, pricing, and timeline</li>
+          </ul>
+        </div>
+      </div>
+      <div class="animate-on-scroll animate-delay-2">
+        <div class="contact-form-card">
+          <h3 style="margin-bottom:1.5rem;">Demo Request Form</h3>
+          <form action="https://formspree.io/f/xbdegorz" method="POST" data-formspree>
+            <div class="form-group">
+              <label for="demo-name">Name <span style="color:var(--color-danger);">*</span></label>
+              <input type="text" id="demo-name" name="name" required placeholder="Your full name">
+            </div>
+            <div class="form-group">
+              <label for="demo-email">Email <span style="color:var(--color-danger);">*</span></label>
+              <input type="email" id="demo-email" name="email" required placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+              <label for="demo-org">Organization <span style="color:var(--color-danger);">*</span></label>
+              <input type="text" id="demo-org" name="organization" required placeholder="University, company, or institution">
+            </div>
+            <div class="form-group">
+              <label for="demo-role">Role <span style="color:var(--color-danger);">*</span></label>
+              <select id="demo-role" name="role" required>
+                <option value="">Select your role</option>
+                <option value="Academic Researcher">Academic Researcher</option>
+                <option value="CRO">CRO</option>
+                <option value="Startup">Startup</option>
+                <option value="Investor">Investor</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="demo-area">Research Area</label>
+              <input type="text" id="demo-area" name="research_area" placeholder="What are you studying or building?">
+            </div>
+            <div class="form-group">
+              <label for="demo-timeline">Timeline</label>
+              <select id="demo-timeline" name="timeline">
+                <option value="">Select timeline</option>
+                <option value="Immediately">Immediately</option>
+                <option value="1-3 months">1–3 months</option>
+                <option value="3-6 months">3–6 months</option>
+                <option value="Just exploring">Just exploring</option>
+              </select>
+            </div>
+            <button type="submit" class="btn-primary" style="width:100%;">Request a Demo</button>
+            <div class="form-message success">Thank you — we will be in touch within 1–2 business days to schedule your demo.</div>
+            <div class="form-message error">Something went wrong. Please email us directly at <a href="mailto:info@supersensors.ai" style="color:var(--color-danger);">info@supersensors.ai</a></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="./index.html"><img src="./assets/img/logo.svg" alt="Super Sensors"></a>
+        <p class="footer-tagline">Breath data, decoded.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./product.html">Product</a></li>
+          <li><a href="./applications.html">Applications</a></li>
+          <li><a href="./researchers.html">Researchers</a></li>
+          <li><a href="./investors.html">Investors</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <a href="mailto:info@supersensors.ai">info@supersensors.ai</a>
+        <div class="social-icons">
+          <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
+          <a href="#" class="social-icon" aria-label="Twitter/X">𝕏</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">© 2026 Super Sensors. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="./assets/js/main.js"></script>
+</body>
+</html>
